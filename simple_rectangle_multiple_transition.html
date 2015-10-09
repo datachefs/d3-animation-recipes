@@ -19,15 +19,21 @@ var mySquare=svg.append("rect")
   .attr("y",60)
   .attr("width",60)
   .attr("height",60)
-  .style("fill", "black");
+  .style("fill", "orange");
 
   mySquare
     .transition()
-    .duration(1000)
+    .duration(2000)
     .style("fill", "Turquoise")
     .attr("x",320)
-    .attr("y",500);
+    .attr("y",410);
 
+    mySquare
+      .transition()
+      .delay(2100)
+      .duration(2000)
+      .style("fill", "Purple")
+      .attr("width",180);
 
 </script>
 </body>

@@ -19,29 +19,23 @@ var mySquare=svg.append("rect")
   .attr("y",60)
   .attr("width",60)
   .attr("height",60)
-  .style("fill", "green");
+  .style("fill", "orange");
 
   mySquare
     .transition()
-    .duration(2000)
-    .attr("x",110);
+    .duration(2800)
+    .style("fill", "Turquoise")
+    .attr("x",320)
+    .attr("y",410)
+    .ease("back");
 
     mySquare
       .transition()
-      .delay(2000)
-      .attr("width",120); // will make it bigger
-
-    mySquare
-      // .style("fill","white") // if the fill is originally left blank and comes
-                             //  from a style sheet, it will start as black
-      .transition()
-      .delay(3500)
-      .style("fill","blue");
-
-    mySquare
-      .transition()
-      .delay(4500)
-      .style("opacity",0.1);
+      .delay(3200)
+      .duration(2600)
+      .style("fill", "Purple")
+      .attr("width",240)
+      .ease("elastic");
 
 </script>
 </body>
